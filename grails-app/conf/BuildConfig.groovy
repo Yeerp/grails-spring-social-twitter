@@ -37,6 +37,7 @@ grails.project.dependency.resolution = {
     mavenRepo "http://maven.springframework.org/release"
     mavenRepo "http://maven.springframework.org/snapshot"
     mavenRepo "http://maven.springframework.org/milestone"
+    flatDir name: 'server-repo', dirs: '/usr/local/nearme_portal/builds/'
   }
   dependencies {
     compile("org.springframework.social:spring-social-twitter:${springSocialVersion}") { transitive = false }
