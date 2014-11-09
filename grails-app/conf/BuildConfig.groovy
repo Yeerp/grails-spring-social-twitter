@@ -45,5 +45,14 @@ grails.project.dependency.resolution = {
   plugins {
     compile(":spring-security-core:2.0-RC2")
     compile(":spring-social-core:0.1.34.local")
+    
+    // Release
+		build (':release:2.2.1') {
+			export = false
+			excludes 'rest-client-builder'
+		}
+		build (':rest-client-builder:1.0.3') {
+			export = false
+		}
   }
 }
